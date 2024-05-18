@@ -31,15 +31,19 @@ class _EmergencyCallsScreenState extends State<EmergencyCallsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text('Emergency Calls'),
-        backgroundColor: Colors.transparent,
+        title: const Text(
+          'Emergency Calls',
+          style: TextStyle(color: Color.fromARGB(255, 255, 0, 0), fontWeight: FontWeight.bold),
+          ),
+          backgroundColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [Color.fromARGB(255, 247, 96, 96), Color.fromARGB(255, 219, 230, 240)],
+              colors: [Color.fromARGB(193, 241, 96, 96), Color.fromARGB(179, 255, 255, 255)],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
             ),
